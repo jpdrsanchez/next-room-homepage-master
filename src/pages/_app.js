@@ -12,6 +12,10 @@ function MyApp({ Component, pageProps }) {
           sizes="32x32"
           href="favicon-32x32.png"
         />
+        <meta
+          name="description"
+          content="Our multifunctional collection blends design and function to suit your individual taste. Make each room unique"
+        />
         <title>Frontend Mentor | Room homepage</title>
       </Head>
       <GlobalStyles />
