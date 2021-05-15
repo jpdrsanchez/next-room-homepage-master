@@ -1,13 +1,18 @@
-import Container from '../components/Container';
-import Text from '../components/Text';
-import Title from '../components/Title';
+import Content from '../components/Content';
+import ImageWrapper from '../components/ImageWrapper';
+import Slide from '../components/Slide';
+import Template from '../components/Template';
 
 const Home = () => {
   return (
-    <Container>
-      <Title>My NextJS - Starter Template</Title>
-      <Text>NextJS | ReactJS | Styled Components</Text>
-    </Container>
+    <>
+      <Template>
+        <Slide />
+        <ImageWrapper url="/images/image-about-dark.jpg" />
+        <Content />
+        <ImageWrapper url="/images/image-about-light.jpg" />
+      </Template>
+    </>
   );
 };
 

@@ -8,11 +8,13 @@ const GlobalStyles = createGlobalStyle`
 
   :root {
     /* Typography */
-    --main-font: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --main-font: 'Spartan', sans-serif;
 
     /* Colors */
-    --black: #222;
+    --black: #000;
     --white: #fff;
+    --grey: #a0a0a0;
+    --dark-grey: #444;
 
     /* Units */
     --gutter: .9375rem; // 15px
