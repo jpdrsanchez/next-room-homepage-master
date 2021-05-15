@@ -104,7 +104,26 @@ const Slide = () => {
     };
   }, [current]);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const handleKeyboard = (event) => {
+      if (event.key === 'ArrowLeft' || event.key === 'a') {
+        if (current > 0) setCurrent(current - 1);
+        else setCurrent(data.length - 1);
+        console.log(current);
+      } else if (event.key === 'ArrowRight' || event.key === 'd') {
+        if (current < data.length - 1) setCurrent(current + 1);
+        else setCurrent(0);
+        console.log(current);
+      }
+      window.removeEventListener('keydown', handleKeyboard);
+    };
+
+    window.addEventListener('keydown', handleKeyboard);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyboard);
+    };
+  }, [current]);
 
   return (
     <SlideWrapper>
